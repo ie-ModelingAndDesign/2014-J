@@ -1,104 +1,76 @@
-
 import UIKit
 
 
 class SecondViewController: UIViewController {
+    var i = 0
+    let myLabel = UILabel(frame: CGRectMake(0,0,500,100))
+    let eventname = UILabel(frame: CGRectMake(0,0,150,25))
     
-    
-    
-    
-    
-    let myButton0: UIButton = UIButton()
-    let myButton1: UIButton = UIButton()
-    
-   // let myWindow = UIWindow()
-    //let myWindowButton = UIButton()
-    
+    var moji : [ String ] = [ "hello\ntest\nTest\nTEST" , "2ページ目", "3ページ目"]
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
+        myLabel.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
+        myLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 300)
+        myLabel.layer.masksToBounds = true
+        myLabel.layer.cornerRadius = 10.0
+        eventname.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
+        eventname.layer.position = CGPoint(x:100,y:25)
+        eventname.layer.cornerRadius = 10.0
 
-        // サイズを設定する.
+        // テキスト
+        myLabel.text = moji[i]
+        eventname.text = "event name"
         
-        myButton0.frame = CGRectMake(0,0,200,40)
-        myButton1.frame = CGRectMake(0,0,200,40)
+        // 行数無制限
+        myLabel.numberOfLines = 4
+        myLabel.font = UIFont(name: "HiraKakuProN-W3", size: 24)
+        // 文字の色を白にする.
+        myLabel.textColor = UIColor.whiteColor()
+        eventname.textColor = UIColor.whiteColor()
         
-        
-        // 背景色を設定する.
-        
-        myButton0.backgroundColor = UIColor.redColor()
-        myButton1.backgroundColor = UIColor.blueColor()
-        
-        
-        // 枠を丸くする.
-        
-        myButton0.layer.masksToBounds = true
-        myButton1.layer.masksToBounds = true
-        
-        
-        
-        // タイトルを設定する(通常時).
-        
-        myButton0.setTitle("BACK", forState: UIControlState.Normal)
-        
-        myButton0.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-        
-        myButton1.setTitle("BACK", forState: UIControlState.Normal)
-        
-        myButton1.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-        
-        
-        
-        // タイトルを設定する(ボタンがハイライトされた時).
-        
-        myButton0.setTitle("BACK", forState: UIControlState.Highlighted)
-        
-        myButton0.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
-        
-        myButton1.setTitle("BACK", forState: UIControlState.Highlighted)
-        
-        myButton1.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
-        
-        
-        
-        // コーナーの半径を設定する.
-        
-        myButton0.layer.cornerRadius = 20.0
-        myButton1.layer.cornerRadius = 20.0
-        
-        
-        
-        // ボタンの位置を指定する.
-        
-        myButton0.layer.position = CGPoint(x: self.view.frame.width/2, y:200)
-        myButton1.layer.position = CGPoint(x: self.view.frame.width/2, y:250)
+        // 文字の影の色をグレーにする.
+        myLabel.shadowColor = UIColor.grayColor()
+        eventname.shadowColor = UIColor.grayColor()
+
+        self.view.addSubview(myLabel)
+        self.view.addSubview(eventname)
+
         
         
         
         
-        // タグを設定する.
+        let myButton: UIButton = UIButton()
+            
+            // サイズを設定する.
+            myButton.frame = CGRectMake(0,0,500,100)
+
+            // 背景色を設定する.
+            myButton.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 0.0, alpha: 0.0)
         
-         myButton0.tag = 0
-         myButton1.tag = 1
+            // タイトルを設定する(通常時).
+            myButton.setTitle(" ", forState: UIControlState.Normal)
+            myButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         
+            // コーナーの半径を設定する.
+            myButton.layer.cornerRadius = 20.0
         
+            // ボタンの位置を指定する.
+            myButton.layer.position = CGPoint(x: self.view.frame.width/2, y:300)
+            
+            // タグを設定する.
+            myButton.tag = 1
         
+            // イベントを追加する.
+            myButton.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
         
-        // イベントを追加する.
-        
-        myButton0.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
-        myButton1.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
-        
-        
-        
-        // ボタンをViewに追加する.
-        
-        self.view.addSubview(myButton0)
-        self.view.addSubview(myButton1)
+            // ボタンをViewに追加する.
+            self.view.addSubview(myButton)
         
     }
+    
     
     
     override func didReceiveMemoryWarning() {
@@ -107,37 +79,20 @@ class SecondViewController: UIViewController {
         
     }
     
-    
-    
-    /*
-    
-    ボタンイベント.
-    
-    */
-    
     func onClickMyButton(sender: UIButton){
         
         println("onClickMyButton:")
-        
         println("sender.currentTitile: \(sender.currentTitle)")
-        
         println("sender.tag:\(sender.tag)")
+        i += 1
+        if(moji.count == i){
+            i = 0
+        }
         
-        // 遷移するViewを定義する.
-        
-        let mySecondViewController: UIViewController = FirstViewController()
-        
-        
-        // アニメーションを設定する.
-        
-        //mySecondViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
-        
-        
-        // Viewの移動する.
-        
-        self.presentViewController(mySecondViewController, animated: false, completion: nil)
-        
-        
+        myLabel.text = moji[i]
     }
+    
+    
+    
     
 }

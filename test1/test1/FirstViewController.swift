@@ -24,15 +24,10 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         
         // 背景に画像を設定する.
-        
         let myImage = UIImage(named: "3resZ.jpg")!
-        
         var myImageView = UIImageView()
-        
         myImageView.image = myImage
-        
         myImageView.frame = CGRectMake(0, 0, myImage.size.width, myImage.size.height)
-        
         self.view.addSubview(myImageView)
         
         
@@ -138,7 +133,7 @@ class FirstViewController: UIViewController {
         
         // イベントを追加する.
         
-        myButton1.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
+        myButton0.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
         
         
         
