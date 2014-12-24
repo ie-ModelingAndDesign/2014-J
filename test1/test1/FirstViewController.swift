@@ -23,11 +23,12 @@ class FirstViewController: UIViewController {
         
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor.whiteColor()
         // 背景に画像を設定する.
-        let myImage = UIImage(named: "3resZ.jpg")!
+        let myImage = UIImage(named: "タイトル仮.png")!
         var myImageView = UIImageView()
         myImageView.image = myImage
-        myImageView.frame = CGRectMake(0, 0, myImage.size.width, myImage.size.height)
+        myImageView.frame = CGRectMake(0, 0, myImage.size.width-150, myImage.size.height)
         self.view.addSubview(myImageView)
         
         
@@ -42,11 +43,11 @@ class FirstViewController: UIViewController {
         
         // 背景色を設定する.
         
-        myButton0.backgroundColor = UIColor.whiteColor()
-        myButton1.backgroundColor = UIColor.whiteColor()
-        myButton2.backgroundColor = UIColor.whiteColor()
-        myButton3.backgroundColor = UIColor.whiteColor()
-        myButton4.backgroundColor = UIColor.whiteColor()
+        myButton0.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
+        myButton1.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
+        myButton2.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
+        myButton3.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
+        myButton4.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
         
         
         // 枠を丸くする.
@@ -112,11 +113,11 @@ class FirstViewController: UIViewController {
         
         // ボタンの位置を指定する.
         
-        myButton0.layer.position = CGPoint(x: self.view.frame.width/2, y:100)
-        myButton1.layer.position = CGPoint(x: self.view.frame.width/2, y:150)
-        myButton2.layer.position = CGPoint(x: self.view.frame.width/2, y:200)
-        myButton3.layer.position = CGPoint(x: self.view.frame.width/2, y:250)
-        myButton4.layer.position = CGPoint(x: self.view.frame.width/2, y:350)
+        myButton0.layer.position = CGPoint(x: self.view.frame.width/2+200, y:100)
+        myButton1.layer.position = CGPoint(x: self.view.frame.width/2+200, y:150)
+        myButton2.layer.position = CGPoint(x: self.view.frame.width/2+200, y:200)
+        myButton3.layer.position = CGPoint(x: self.view.frame.width/2+200, y:250)
+        myButton4.layer.position = CGPoint(x: self.view.frame.width/2+200, y:350)
 
         
         
