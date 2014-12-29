@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C71AD451A3EA6D800A4C396 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C71AD441A3EA6D800A4C396 /* SecondViewController.swift */; };
+		5C816D6C1A51AE73007FC627 /* text1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5C816D6B1A51AE73007FC627 /* text1.txt */; };
 		5CA46B921A3E95EB006A21E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA46B911A3E95EB006A21E6 /* AppDelegate.swift */; };
 		5CA46B941A3E95EB006A21E6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA46B931A3E95EB006A21E6 /* FirstViewController.swift */; };
 		5CA46B971A3E95EB006A21E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA46B951A3E95EB006A21E6 /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		5CA46B9C1A3E95EB006A21E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA46B9A1A3E95EB006A21E6 /* LaunchScreen.xib */; };
 		5CA46BA81A3E95EB006A21E6 /* test1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA46BA71A3E95EB006A21E6 /* test1Tests.swift */; };
 		5CA46BB21A3E9B67006A21E6 /* 3resZ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5CA46BB11A3E9B67006A21E6 /* 3resZ.jpg */; };
-		5CEB05311A4AC21D0044DB3F /* text1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5CEB05301A4AC21D0044DB3F /* text1.txt */; };
 		5CEB05331A4AED190044DB3F /* タイトル仮.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CEB05321A4AED190044DB3F /* タイトル仮.png */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		5C71AD441A3EA6D800A4C396 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5C816D6B1A51AE73007FC627 /* text1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text1.txt; sourceTree = "<group>"; };
 		5CA46B8C1A3E95EB006A21E6 /* test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA46B901A3E95EB006A21E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CA46B911A3E95EB006A21E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		5CA46BA61A3E95EB006A21E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CA46BA71A3E95EB006A21E6 /* test1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test1Tests.swift; sourceTree = "<group>"; };
 		5CA46BB11A3E9B67006A21E6 /* 3resZ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3resZ.jpg; sourceTree = "<group>"; };
-		5CEB05301A4AC21D0044DB3F /* text1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text1.txt; sourceTree = "<group>"; };
 		5CEB05321A4AED190044DB3F /* タイトル仮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "タイトル仮.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C816D6A1A51AE73007FC627 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C816D6B1A51AE73007FC627 /* text1.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		5CA46B831A3E95EB006A21E6 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +93,7 @@
 		5CA46B8E1A3E95EB006A21E6 /* test1 */ = {
 			isa = PBXGroup;
 			children = (
+				5C816D6A1A51AE73007FC627 /* Resources */,
 				5CA46B911A3E95EB006A21E6 /* AppDelegate.swift */,
 				5CA46B931A3E95EB006A21E6 /* FirstViewController.swift */,
 				5C71AD441A3EA6D800A4C396 /* SecondViewController.swift */,
@@ -100,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				5CEB05321A4AED190044DB3F /* タイトル仮.png */,
-				5CEB05301A4AC21D0044DB3F /* text1.txt */,
 				5CA46BB11A3E9B67006A21E6 /* 3resZ.jpg */,
 				5CA46B901A3E95EB006A21E6 /* Info.plist */,
 			);
@@ -205,11 +213,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CEB05331A4AED190044DB3F /* タイトル仮.png in Resources */,
-				5CEB05311A4AC21D0044DB3F /* text1.txt in Resources */,
 				5CA46B971A3E95EB006A21E6 /* Main.storyboard in Resources */,
 				5CA46B9C1A3E95EB006A21E6 /* LaunchScreen.xib in Resources */,
 				5CA46B991A3E95EB006A21E6 /* Images.xcassets in Resources */,
 				5CA46BB21A3E9B67006A21E6 /* 3resZ.jpg in Resources */,
+				5C816D6C1A51AE73007FC627 /* text1.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

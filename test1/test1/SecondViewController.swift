@@ -6,7 +6,7 @@ class SecondViewController: UIViewController {
     let myLabel = UILabel(frame: CGRectMake(0,0,500,100))
     let eventname = UILabel(frame: CGRectMake(0,0,150,25))
     
-    var moji : [ String ] = [ "ウホウホウホ！！！(1ページ目)" , "ウホ？(2ページ目)", "ウホホホホ〜〜〜〜〜♡♡♡！！！(3ページ目)"]
+    var moji:[String] = []
     
     
     
@@ -31,20 +31,46 @@ class SecondViewController: UIViewController {
         println(_path)
         
         //load text
-        var data2 = ""
-        data2 = NSString(contentsOfFile: _path, encoding: NSUTF8StringEncoding, error: nil)!
-        println(data2)
+        var str = ""
+        //str = NSString(contentsOfFile: _path, encoding: NSUTF8StringEncoding, error: nil)!
+        str = NSString(contentsOfFile: "/Users/shigetomi/2014-J/test1/test1/Resources/text1.txt", encoding: NSUTF8StringEncoding, error: nil)!
+        
+        
+        //1文字目（0文字目）
+        println(str[str.startIndex])
+        
+        //n文字目
+        let n = 5
+        println(str[advance(str.startIndex, n)])
+        var char2 = ""
+        
+        for var i = 0; i < countElements(str); i++ {
+            if(str[advance(str.startIndex, i)] == "$"){
+                moji.append(char2)
+                println("count:\(moji.count)")
+                char2 = ""
+                i++
+            }else {
+                char2 += String(str[advance(str.startIndex, i)])
+                println(char2)
+            }
+        }
+        println("-String converted.-")
+        println(moji[0])
+        println(moji[1])
         
         myLabel.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
         myLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 300)
         myLabel.layer.masksToBounds = true
         myLabel.layer.cornerRadius = 10.0
+        
+        
         eventname.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
         eventname.layer.position = CGPoint(x:100,y:25)
         eventname.layer.cornerRadius = 10.0
 
         // テキスト
-        myLabel.text = moji[i]
+        myLabel.text = moji[0]
         eventname.text = "event_name"
         
         // 行数無制限
@@ -95,15 +121,8 @@ class SecondViewController: UIViewController {
     }
     
     func onClickMyButton(sender: UIButton){
-        
         println("onClickMyButton:")
-        println("sender.currentTitile: \(sender.currentTitle)")
-        println("sender.tag:\(sender.tag)")
         i += 1
-        if(moji.count == i){
-            i = 0
-        }
-        
         myLabel.text = moji[i]
     }
     
