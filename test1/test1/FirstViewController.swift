@@ -4,24 +4,19 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    
-    
-    
-    
-    let myButton0: UIButton = UIButton()
-    let myButton1: UIButton = UIButton()
-    let myButton2: UIButton = UIButton()
-    let myButton3: UIButton = UIButton()
-    let myButton4: UIButton = UIButton()
+    let StartButton: UIButton = UIButton()
+    let LoadButton: UIButton = UIButton()
+    let CGModeButton: UIButton = UIButton()
+    let OptionButton: UIButton = UIButton()
+    let ExitButton: UIButton = UIButton()
 
-    
-    
     //let myWindow = UIWindow()
     //let myWindowButton = UIButton()
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
         
         self.view.backgroundColor = UIColor.whiteColor()
         // 背景に画像を設定する.
@@ -33,119 +28,119 @@ class FirstViewController: UIViewController {
         
         
         // サイズを設定する.
-        
-        myButton0.frame = CGRectMake(0,0,200,40)
-        myButton1.frame = CGRectMake(0,0,200,40)
-        myButton2.frame = CGRectMake(0,0,200,40)
-        myButton3.frame = CGRectMake(0,0,200,40)
-        myButton4.frame = CGRectMake(0,0,200,40)
+        StartButton.frame = CGRectMake(0,0,200,40)
+        LoadButton.frame = CGRectMake(0,0,200,40)
+        CGModeButton.frame = CGRectMake(0,0,200,40)
+        OptionButton.frame = CGRectMake(0,0,200,40)
+        ExitButton.frame = CGRectMake(0,0,200,40)
         
         
         // 背景色を設定する.
-        
-        myButton0.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
-        myButton1.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
-        myButton2.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
-        myButton3.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
-        myButton4.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
+        StartButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
+        LoadButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
+        CGModeButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
+        OptionButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
+        ExitButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
         
         
         // 枠を丸くする.
-        
-        myButton0.layer.masksToBounds = true
-        myButton1.layer.masksToBounds = true
-        myButton2.layer.masksToBounds = true
-        myButton3.layer.masksToBounds = true
-        myButton4.layer.masksToBounds = true
+        StartButton.layer.masksToBounds = true
+        LoadButton.layer.masksToBounds = true
+        CGModeButton.layer.masksToBounds = true
+        OptionButton.layer.masksToBounds = true
+        ExitButton.layer.masksToBounds = true
 
         
         
         // タイトルを設定する(通常時).
+        StartButton.setTitle("NEW GAME", forState: UIControlState.Normal)
+        StartButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         
-        myButton0.setTitle("NEW GAME", forState: UIControlState.Normal)
-        myButton0.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        LoadButton.setTitle("LOAD GAME", forState: UIControlState.Normal)
+        LoadButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         
-        myButton1.setTitle("LOAD GAME", forState: UIControlState.Normal)
-        myButton1.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        CGModeButton.setTitle("CG MODE", forState: UIControlState.Normal)
+        CGModeButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         
-        myButton2.setTitle("CG MODE", forState: UIControlState.Normal)
-        myButton2.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        OptionButton.setTitle("OPTION", forState: UIControlState.Normal)
+        OptionButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         
-        myButton3.setTitle("OPTION", forState: UIControlState.Normal)
-        myButton3.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
-        
-        myButton4.setTitle("EXIT", forState: UIControlState.Normal)
-        myButton4.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        ExitButton.setTitle("EXIT", forState: UIControlState.Normal)
+        ExitButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
     
         
         
         
         // タイトルを設定する(ボタンがハイライトされた時).
+        StartButton.setTitle("NEW GAME", forState: UIControlState.Highlighted)
+        StartButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
         
-        myButton0.setTitle("NEW GAME", forState: UIControlState.Highlighted)
-        myButton0.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
+        LoadButton.setTitle("LOAD GAME", forState: UIControlState.Highlighted)
+        LoadButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
         
-        myButton1.setTitle("LOAD GAME", forState: UIControlState.Highlighted)
-        myButton1.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
+        CGModeButton.setTitle("CG MODE", forState: UIControlState.Highlighted)
+        CGModeButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
         
-        myButton2.setTitle("CG MODE", forState: UIControlState.Highlighted)
-        myButton2.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
+        OptionButton.setTitle("OPTION", forState: UIControlState.Highlighted)
+        OptionButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
         
-        myButton3.setTitle("OPTION", forState: UIControlState.Highlighted)
-        myButton3.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
-        
-        myButton4.setTitle("EXIT", forState: UIControlState.Highlighted)
-        myButton4.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
+        ExitButton.setTitle("EXIT", forState: UIControlState.Highlighted)
+        ExitButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
         
         
         
         
         
         // コーナーの半径を設定する.
-        
-        myButton0.layer.cornerRadius = 20.0
-        myButton1.layer.cornerRadius = 20.0
-        myButton2.layer.cornerRadius = 20.0
-        myButton3.layer.cornerRadius = 20.0
-        myButton4.layer.cornerRadius = 20.0
+        StartButton.layer.cornerRadius = 20.0
+        LoadButton.layer.cornerRadius = 20.0
+        CGModeButton.layer.cornerRadius = 20.0
+        OptionButton.layer.cornerRadius = 20.0
+        ExitButton.layer.cornerRadius = 20.0
         
         
         
         // ボタンの位置を指定する.
-        
-        myButton0.layer.position = CGPoint(x: self.view.frame.width/2+200, y:100)
-        myButton1.layer.position = CGPoint(x: self.view.frame.width/2+200, y:150)
-        myButton2.layer.position = CGPoint(x: self.view.frame.width/2+200, y:200)
-        myButton3.layer.position = CGPoint(x: self.view.frame.width/2+200, y:250)
-        myButton4.layer.position = CGPoint(x: self.view.frame.width/2+200, y:350)
+        StartButton.layer.position = CGPoint(x: self.view.frame.width/2+200, y:100)
+        LoadButton.layer.position = CGPoint(x: self.view.frame.width/2+200, y:150)
+        CGModeButton.layer.position = CGPoint(x: self.view.frame.width/2+200, y:200)
+        OptionButton.layer.position = CGPoint(x: self.view.frame.width/2+200, y:250)
+        ExitButton.layer.position = CGPoint(x: self.view.frame.width/2+200, y:350)
 
         
         
         
         // タグを設定する.
-        
-        myButton0.tag = 0
-        myButton1.tag = 1
-        myButton2.tag = 2
-        myButton3.tag = 3
-        myButton4.tag = 4
+        StartButton.tag = 0
+        LoadButton.tag = 1
+        CGModeButton.tag = 2
+        OptionButton.tag = 3
+        ExitButton.tag = 4
 
 
         
         // イベントを追加する.
-        
-        myButton0.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
-        
+        StartButton.addTarget(self, action: "onClickStartButton:", forControlEvents: .TouchUpInside)
+        ExitButton.addTarget(self, action: "onClickExitButton:", forControlEvents: .TouchUpInside)
         
         
         // ボタンをViewに追加する.
+        self.view.addSubview(StartButton)
+        self.view.addSubview(LoadButton)
+        self.view.addSubview(CGModeButton)
+        self.view.addSubview(OptionButton)
+        self.view.addSubview(ExitButton)
         
-        self.view.addSubview(myButton0)
-        self.view.addSubview(myButton1)
-        self.view.addSubview(myButton2)
-        self.view.addSubview(myButton3)
-        self.view.addSubview(myButton4)
         
+        //load file
+        //var path = NSBundle.mainBundle().pathForResource("textfile", ofType: "txt")
+        //var jsondata = NSData(contentsOfFile: path!)
+        
+        //let jsonDictionary = NSJSONSerialization.JSONObjectWithData(jsondata!, options: nil, error: nil) as NSDictionary
+        
+        //for dat in jsonDictionary {
+        //    println("値=[\(dat)]")
+       //s }
     }
     
     
@@ -156,36 +151,31 @@ class FirstViewController: UIViewController {
     }
     
     
-    
-    /*
-    
-    ボタンイベント.
-    
-    */
-    
-    func onClickMyButton(sender: UIButton){
+    func onClickStartButton(sender: UIButton){
         
-        println("onClickMyButton:")
-        
+        println("onClickStartButton:")
         println("sender.currentTitile: \(sender.currentTitle)")
-        
         println("sender.tag:\(sender.tag)")
         
-        // 遷移するViewを定義する.
         
+        // 遷移するViewを定義する.
         let mySecondViewController: UIViewController = SecondViewController()
         
         
         // アニメーションを設定する.
-        
         //mySecondViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
         
         
-        // Viewの移動する.
-        
+        // Viewを移動する.
         self.presentViewController(mySecondViewController, animated: false, completion: nil)
         
         
+    }
+    
+    func onClickExitButton(sender: UIButton){
+        println("onClickExitButton")
+        println("To Exit.")
+        exit(0)
     }
     
 }
