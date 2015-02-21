@@ -36,11 +36,11 @@ class FirstViewController: UIViewController {
         
         
         // 背景色を設定する.
-        StartButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
-        LoadButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
-        CGModeButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
-        OptionButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
-        ExitButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.75)
+        StartButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.0)
+        LoadButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.0)
+        CGModeButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.0)
+        OptionButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.0)
+        ExitButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.00)
         
         
         // 枠を丸くする.
@@ -121,8 +121,14 @@ class FirstViewController: UIViewController {
         
         // イベントを追加する.
         StartButton.addTarget(self, action: "onClickStartButton:", forControlEvents: .TouchUpInside)
-        ExitButton.addTarget(self, action: "onClickExitButton:", forControlEvents: .TouchUpInside)
         
+        ExitButton.addTarget(self, action: "onClickExitButton:", forControlEvents: .TouchUpInside)
+        LoadButton.addTarget(self, action: "onClickLoadButton:", forControlEvents: .TouchUpInside)
+        CGModeButton.addTarget(self, action: "onClickCGModeButton:", forControlEvents: .TouchUpInside)
+        OptionButton.addTarget(self, action: "onClickOptionButton:", forControlEvents: .TouchUpInside)
+        
+        
+
         
         // ボタンをViewに追加する.
         self.view.addSubview(StartButton)
@@ -132,15 +138,36 @@ class FirstViewController: UIViewController {
         self.view.addSubview(ExitButton)
         
         
-        //load file
-        //var path = NSBundle.mainBundle().pathForResource("textfile", ofType: "txt")
-        //var jsondata = NSData(contentsOfFile: path!)
+        //ボタンのimage
+        let newgameView: UIImageView = UIImageView(frame: CGRectMake(0,0,200,40))
+        let newgame = UIImage(named: "newgame-y.png")
+        newgameView.image = newgame
+        newgameView.layer.position = CGPoint(x: self.view.frame.width/2+200, y:100)
+        self.view.addSubview(newgameView)
         
-        //let jsonDictionary = NSJSONSerialization.JSONObjectWithData(jsondata!, options: nil, error: nil) as NSDictionary
+        let loadgameView: UIImageView = UIImageView(frame: CGRectMake(0,0,200,40))
+        let loadgame = UIImage(named: "load-y.png")
+        loadgameView.image = loadgame
+        loadgameView.layer.position = CGPoint(x: self.view.frame.width/2+200, y:150)
+        self.view.addSubview(loadgameView)
         
-        //for dat in jsonDictionary {
-        //    println("値=[\(dat)]")
-       //s }
+        let cgmodeView: UIImageView = UIImageView(frame: CGRectMake(0,0,200,40))
+        let cgmode = UIImage(named: "cgmode-y.png")
+        cgmodeView.image = cgmode
+        cgmodeView.layer.position = CGPoint(x: self.view.frame.width/2+200, y:200)
+        self.view.addSubview(cgmodeView)
+        
+        let optionView: UIImageView = UIImageView(frame: CGRectMake(0,0,200,40))
+        let option = UIImage(named: "option-y.png")
+        optionView.image = option
+        optionView.layer.position = CGPoint(x: self.view.frame.width/2+200, y:250)
+        self.view.addSubview(optionView)
+        
+        let exitView: UIImageView = UIImageView(frame: CGRectMake(0,0,200,40))
+        let exit = UIImage(named: "exit-y.png")
+        exitView.image = exit
+        exitView.layer.position = CGPoint(x: self.view.frame.width/2+200, y:350)
+        self.view.addSubview(exitView)
     }
     
     
@@ -156,19 +183,12 @@ class FirstViewController: UIViewController {
         println("onClickStartButton:")
         println("sender.currentTitile: \(sender.currentTitle)")
         println("sender.tag:\(sender.tag)")
-        
-        
         // 遷移するViewを定義する.
         let mySecondViewController: UIViewController = SecondViewController()
-        
-        
         // アニメーションを設定する.
         //mySecondViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
-        
-        
         // Viewを移動する.
         self.presentViewController(mySecondViewController, animated: false, completion: nil)
-        
         
     }
     
@@ -176,6 +196,48 @@ class FirstViewController: UIViewController {
         println("onClickExitButton")
         println("To Exit.")
         exit(0)
+    }
+    
+    func onClickLoadButton(sender: UIButton){
+        println("onClickButton3")
+        // UIAlertControllerを作成する.
+        let myAlert = UIAlertController(title: "体験版では選択できません", message: "製品版を買ってね！", preferredStyle: .Alert)
+        // OKのアクションを作成する.
+        let myOkAction = UIAlertAction(title: "OK", style: .Default) { action in
+            println("Action OK!!")
+        }
+        // OKのActionを追加する.
+        myAlert.addAction(myOkAction)
+        // UIAlertを発動する.
+        presentViewController(myAlert, animated: true, completion: nil)
+    }
+    
+    func onClickCGModeButton(sender: UIButton){
+        println("onClickButton3")
+        // UIAlertControllerを作成する.
+        let myAlert = UIAlertController(title: "体験版では選択できません", message: "製品版を買ってね！", preferredStyle: .Alert)
+        // OKのアクションを作成する.
+        let myOkAction = UIAlertAction(title: "OK", style: .Default) { action in
+            println("Action OK!!")
+        }
+        // OKのActionを追加する.
+        myAlert.addAction(myOkAction)
+        // UIAlertを発動する.
+        presentViewController(myAlert, animated: true, completion: nil)
+    }
+    
+    func onClickOptionButton(sender: UIButton){
+        println("onClickButton3")
+        // UIAlertControllerを作成する.
+        let myAlert = UIAlertController(title: "体験版では選択できません", message: "製品版を買ってね！", preferredStyle: .Alert)
+        // OKのアクションを作成する.
+        let myOkAction = UIAlertAction(title: "OK", style: .Default) { action in
+            println("Action OK!!")
+        }
+        // OKのActionを追加する.
+        myAlert.addAction(myOkAction)
+        // UIAlertを発動する.
+        presentViewController(myAlert, animated: true, completion: nil)
     }
     
 }

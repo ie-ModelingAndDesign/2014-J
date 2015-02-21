@@ -2,11 +2,36 @@ import UIKit
 import Foundation
 
 class SecondViewController: UIViewController {
+    
+    let character0View: UIImageView = UIImageView(frame: CGRectMake(0,0,300,300))
+    var character0 = UIImage(named: "11.png")
+    
     var i = 0
-    let myLabel = UILabel(frame: CGRectMake(0,0,500,100))
+    let myLabel = UILabel(frame: CGRectMake(0,0,600,100))
     let eventname = UILabel(frame: CGRectMake(0,0,150,25))
     
-    var moji:[String] = ["わたしは○○。逢絵高校の2年生。\nわたしの1つ上にあこがれの先輩がいるんだけど、初めてあったときにその人に一目惚れしちゃったの。","自信はなかったけど、勢いだけで一度告白した事があったの。\n案の定、フラれちゃった。\n","でも、そのとき先輩が\n「今は断る。だけどもう一度だけチャンスをやる。そのときまで待ってやるからでなおしてこい。」","って言ってくれて、このときに\n「もっとかわいくなって、絶対に付き合ってやる！」って決めたの。\n","先輩はもう志望の大学を決定してて,今は勉強の真っ最中。\n\n","勉強の邪魔をしたくないから、わたしも先輩と同じ大学を目指して、もしその大学に入る事ができたら、先輩に告白しようと思うの。\n","同じ大学に入るために勉強して、もっとかわいくなって、\n絶対先輩と付き合ってやる！！\n"
+    // 背景に画像を設定する.
+    var myImage = UIImage(named: "house.jpg")!
+    var myImageView = UIImageView()
+    
+    
+    var moji:[String] = [
+        "ピピピッピピピッ\n\n\n",
+        "リケコ:う~ん...\n\n\n",
+        "ピピピッピピピッ\n\n\n",
+        "リケコ:目覚まし...?今何時...?\n\n\n",
+        "リケコ:えっ!やばい、もうこんな時間！？急いで支度しなきゃ！\n\n\n",
+        "お母さん:リケコ、朝ごはんはいいの？\n\n\n",
+        "リケコ:時間ないからパンだけ！\n\n\n",
+        "お母さん:気をつけていってらっしゃい。\n\n\n",
+        "リケコ:行ってきまーす！\n\n\n",
+        "わたしはリケコ。逢絵高校の2年生。\nわたしの1つ上にあこがれの先輩がいるんだけど、初めてあったときにその人に一目惚れしちゃったの。\n",
+        "自信はなかったけど、勢いだけで一度告白した事があったの。\n案の定、フラれちゃった。\n",
+        "でも、そのとき先輩が\n「今は断る。だけどもう一度だけチャンスをやる。そのときまで待ってやるからでなおしてこい。」\n",
+        "って言ってくれて、このときに\n「もっとかわいくなって、絶対に付き合ってやる！」って決めたの。\n","先輩はもう志望の大学を決定してて,今は勉強の真っ最中。\n\n",
+        "勉強の邪魔をしたくないから、わたしも先輩と同じ大学を目指して、もしその大学に入る事ができたら、先輩に告白しようと思うの。\n",
+        "同じ大学に入るために勉強して、もっとかわいくなって、\n絶対先輩と付き合ってやる！！\n",
+        ">このゲームは憧れの先輩と付き合うために主人公が奮闘する恋愛ゲームです。\nいろいろな人々と触れあいながら勉強し、もっと可愛くなって先輩を振り向かせましょう！"
     ]
     var event_name:[String] = ["プロローグ",]
     
@@ -15,6 +40,12 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        character0View.image = character0
+        character0View.layer.position = CGPoint(x: 200, y: 125.0)
+        
+        myImageView.image = myImage
+        myImageView.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height)
         
         /*
         let myImage = UIImage(named: "3resZ.jpg")!
@@ -37,7 +68,7 @@ class SecondViewController: UIViewController {
         //1文字目（0文字目）
         println(str[str.startIndex])
         
-        //n文字目
+        /\n文字目
         let n = 5
         println(str[advance(str.startIndex, n)])
         var char2 = ""
@@ -123,7 +154,9 @@ class SecondViewController: UIViewController {
     func onClickTextButton(sender: UIButton){
         println("onClickTextButton")
         if i == moji.count-1 {
-            return
+            let myACTViewController: UIViewController = ACTViewController1()
+            self.presentViewController(myACTViewController, animated: false, completion: nil)
+
         }else {
             i += 1
             myLabel.text = moji[i]
@@ -133,12 +166,31 @@ class SecondViewController: UIViewController {
     }
     
     func eventchanges(){
+        
+        
+        
+
         switch i {
-            case 0 :
-                println( "Zero" )
-            case 1 , 2 : // 1 , 2 の時はここを実行
-                println("1 or 2")
-            default : // それ以外の時はここを実行
+            case 5:
+                character0View.removeFromSuperview()
+                self.view.addSubview(character0View)
+                character0 = UIImage(named: "13.png")
+                character0View.image = character0
+            
+                myImageView.removeFromSuperview()
+                self.view.addSubview(myImageView)
+                self.view.sendSubviewToBack(myImageView)
+            
+            
+            case 9 :
+                character0 = UIImage(named: "3.png")
+                character0View.image = character0
+                myImage = UIImage(named: "schoolroad.jpg")!
+                myImageView.image = myImage
+            case 15 :
+                character0 = UIImage(named: "5.png")
+                character0View.image = character0
+            default : // それ以外の時
                 println("i is other")
         }
     }
