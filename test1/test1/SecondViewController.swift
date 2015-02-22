@@ -1,7 +1,10 @@
 import UIKit
 import Foundation
+import AVFoundation
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController,AVAudioPlayerDelegate {
+    
+    var myAudioPlayer : AVAudioPlayer!
     
     let character0View: UIImageView = UIImageView(frame: CGRectMake(0,0,300,300))
     var character0 = UIImage(named: "11.png")
@@ -40,6 +43,16 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        
+        //再生する音源のURLを生成.
+        let soundFilePath : NSString = NSBundle.mainBundle().pathForResource("cp04", ofType: "mp3")!
+        let fileURL : NSURL = NSURL(fileURLWithPath: soundFilePath)!
+        //AVAudioPlayerのインスタンス化.
+        myAudioPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: nil)
+        //AVAudioPlayerのデリゲートをセット.
+        myAudioPlayer.delegate = self
+        
         
         character0View.image = character0
         character0View.layer.position = CGPoint(x: 200, y: 125.0)
@@ -154,6 +167,7 @@ class SecondViewController: UIViewController {
     func onClickTextButton(sender: UIButton){
         println("onClickTextButton")
         if i == moji.count-1 {
+            myAudioPlayer.pause()
             let myACTViewController: UIViewController = ACTViewController1()
             self.presentViewController(myACTViewController, animated: false, completion: nil)
 
@@ -180,7 +194,7 @@ class SecondViewController: UIViewController {
                 myImageView.removeFromSuperview()
                 self.view.addSubview(myImageView)
                 self.view.sendSubviewToBack(myImageView)
-            
+                myAudioPlayer.play()
             
             case 9 :
                 character0 = UIImage(named: "3.png")
@@ -194,7 +208,16 @@ class SecondViewController: UIViewController {
                 println("i is other")
         }
     }
+    //音楽再生が成功した時に呼ばれるメソッド
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
+        println("Music Finish")
+        myAudioPlayer.play()
+    }
     
+    //デコード中にエラーが起きた時に呼ばれるメソッド.
+    func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer!, error: NSError!) {
+        println("Error")
+    }
     
     
 }

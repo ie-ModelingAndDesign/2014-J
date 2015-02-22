@@ -1,7 +1,9 @@
 import UIKit
 import Foundation
+import AVFoundation
 
-class RandomEventNight1: UIViewController {
+class RandomEventNight1: UIViewController,AVAudioPlayerDelegate {
+     var myAudioPlayer : AVAudioPlayer!
     
     let character0View: UIImageView = UIImageView(frame: CGRectMake(0,0,300,300))
     var character0 = UIImage(named: "1.png")
@@ -16,14 +18,14 @@ class RandomEventNight1: UIViewController {
     var moji:[String] = [
         
         
-        "???:ちょっと。そこの君。\n\n\n",
+        "???:ちょっと。そこの君。(イケボ\n\n\n",
         "リケコ:え、何ですか？\n\n\n",
-        "???:俺は三年の池上。\nところで君、好きな人がいるでしょ。しかも先輩で。\n\n",
+        "???:俺は三年の池上。\nところで君、好きな人がいるでしょ。しかも先輩で。(イケボ\n",
         "リケコ:なんで分かったんですか!?\n\n\n",
-        "池上先輩:顔を見たら分かるよ。\nよかったら、手伝ってあげようか。\n\n",
+        "池上先輩:顔を見たら分かるよ。\nよかったら、手伝ってあげようか。(イケボ\n\n",
         "リケコ:本当ですか!ありがとうございます!\n\n\n",
-        "池上先輩:いいよ。恋する乙女の役に立ちたいし。\n\n\n",
-        "池上先輩:また今度ここにおいで。\n教えてあげられる事は何でも教えるから。\n\n",
+        "池上先輩:いいよ。恋する乙女の役に立ちたいし。(イケボ\n\n",
+        "池上先輩:また今度ここにおいで。\n教えてあげられる事は何でも教えるから。(イケボ\n\n",
         ">イケメンな人から先輩のことについて色々教えてもらった！\n\n"
         
     ]
@@ -34,6 +36,15 @@ class RandomEventNight1: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        //再生する音源のURLを生成.
+        let soundFilePath : NSString = NSBundle.mainBundle().pathForResource("モーツァルト 大いなる魂と高貴な心は(アリア) K.578 Sエリーザベト・シュヴァルツコップ 指揮ジョージ・セル アロンドン交響楽団", ofType: "mp3")!
+        let fileURL : NSURL = NSURL(fileURLWithPath: soundFilePath)!
+        //AVAudioPlayerのインスタンス化.
+        myAudioPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: nil)
+        //AVAudioPlayerのデリゲートをセット.
+        myAudioPlayer.delegate = self
+        
         
         // 背景に画像を設定する.
         var myImage = UIImage(named: "koumonyoru.jpg")!
@@ -114,6 +125,7 @@ class RandomEventNight1: UIViewController {
     func onClickTextButton(sender: UIButton){
         println("onClickTextButton")
         if i == moji.count-1 {
+            myAudioPlayer.pause()
             let myACTViewController: UIViewController = sleep1()
             self.presentViewController(myACTViewController, animated: false, completion: nil)
         }else {
@@ -129,7 +141,8 @@ class RandomEventNight1: UIViewController {
         case 1:
             character0 = UIImage(named: "0.png")
             character0View.image = character0
-            
+        case 2:
+            myAudioPlayer.play()
         case 3:
             character0 = UIImage(named: "8.png")
             character0View.image = character0
@@ -137,6 +150,7 @@ class RandomEventNight1: UIViewController {
         case 5:
             character0 = UIImage(named: "1.png")
             character0View.image = character0
+            
             /*
         case 5,13:
             character0View.removeFromSuperview()
@@ -152,6 +166,15 @@ class RandomEventNight1: UIViewController {
         }
     }
     
+    //音楽再生が成功した時に呼ばれるメソッド
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
+        println("Music Finish")
+        myAudioPlayer.play()
+    }
     
+    //デコード中にエラーが起きた時に呼ばれるメソッド.
+    func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer!, error: NSError!) {
+        println("Error")
+    }
     
 }

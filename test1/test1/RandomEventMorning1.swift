@@ -1,7 +1,9 @@
 import UIKit
 import Foundation
+import AVFoundation
 
-class RandomEventMorning1: UIViewController {
+class RandomEventMorning1: UIViewController,AVAudioPlayerDelegate {
+    var myAudioPlayer : AVAudioPlayer!
     
     let character0View: UIImageView = UIImageView(frame: CGRectMake(0,0,300,300))
     var character0 = UIImage(named: "1.png")
@@ -41,6 +43,14 @@ class RandomEventMorning1: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        //再生する音源のURLを生成.
+        let soundFilePath : NSString = NSBundle.mainBundle().pathForResource("2693", ofType: "mp3")!
+        let fileURL : NSURL = NSURL(fileURLWithPath: soundFilePath)!
+        //AVAudioPlayerのインスタンス化.
+        myAudioPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: nil)
+        //AVAudioPlayerのデリゲートをセット.
+        myAudioPlayer.delegate = self
         
         // 背景に画像を設定する.
         var myImage = UIImage(named: "rika.jpg")!
@@ -119,6 +129,7 @@ class RandomEventMorning1: UIViewController {
     func onClickTextButton(sender: UIButton){
         println("onClickTextButton")
         if i == moji.count-1 {
+            myAudioPlayer.pause()
             let myACTViewController: UIViewController = ACTViewController2()
             self.presentViewController(myACTViewController, animated: false, completion: nil)
 
@@ -135,7 +146,7 @@ class RandomEventMorning1: UIViewController {
         case 3:
             character0 = UIImage(named: "7.png")
             character0View.image = character0
-            
+            myAudioPlayer.play()
         case 4:
             character1View.removeFromSuperview()
             self.view.addSubview(character1View)
@@ -181,6 +192,15 @@ class RandomEventMorning1: UIViewController {
         }
     }
     
+    //音楽再生が成功した時に呼ばれるメソッド
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
+        println("Music Finish")
+        myAudioPlayer.play()
+    }
     
+    //デコード中にエラーが起きた時に呼ばれるメソッド.
+    func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer!, error: NSError!) {
+        println("Error")
+    }
     
 }

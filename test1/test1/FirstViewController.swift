@@ -1,8 +1,10 @@
 
 import UIKit
+import AVFoundation
 
-
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController,AVAudioPlayerDelegate {
+    
+    var myAudioPlayer : AVAudioPlayer!
     
     let StartButton: UIButton = UIButton()
     let LoadButton: UIButton = UIButton()
@@ -17,9 +19,17 @@ class FirstViewController: UIViewController {
         
         super.viewDidLoad()
         
+        //再生する音源のURLを生成.
+        let soundFilePath : NSString = NSBundle.mainBundle().pathForResource("Super G@mer Boy offvocal.ver", ofType: "mp3")!
+        let fileURL : NSURL = NSURL(fileURLWithPath: soundFilePath)!
+        //AVAudioPlayerのインスタンス化.
+        myAudioPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: nil)
+        //AVAudioPlayerのデリゲートをセット.
+        myAudioPlayer.delegate = self
+        myAudioPlayer.play()
         
         self.view.backgroundColor = UIColor.whiteColor()
-        // 背景に画像を設定する.
+        // 背景に画像を設定する
         let myImage = UIImage(named: "タイトル仮.png")!
         var myImageView = UIImageView()
         myImageView.image = myImage
@@ -168,6 +178,17 @@ class FirstViewController: UIViewController {
         exitView.image = exit
         exitView.layer.position = CGPoint(x: self.view.frame.width/2+200, y:350)
         self.view.addSubview(exitView)
+        
+        let CreditButton: UIButton = UIButton()
+        CreditButton.frame = CGRectMake(0,0,100,40)
+        CreditButton.backgroundColor = UIColor(red: 1.0, green: 0.50, blue: 0.0, alpha: 1.0)
+        CreditButton.setTitle("CREDIT", forState: UIControlState.Normal)
+        CreditButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        CreditButton.layer.cornerRadius = 20.0
+        CreditButton.layer.position = CGPoint(x: self.view.frame.width/2-275, y:350)
+        CreditButton.addTarget(self, action: "onClickCreditButton:", forControlEvents: .TouchUpInside)
+        self.view.addSubview(CreditButton)
+
     }
     
     
@@ -179,7 +200,7 @@ class FirstViewController: UIViewController {
     
     
     func onClickStartButton(sender: UIButton){
-        
+        myAudioPlayer.pause()
         println("onClickStartButton:")
         println("sender.currentTitile: \(sender.currentTitle)")
         println("sender.tag:\(sender.tag)")
@@ -240,4 +261,23 @@ class FirstViewController: UIViewController {
         presentViewController(myAlert, animated: true, completion: nil)
     }
     
+    func onClickCreditButton(sender: UIButton){
+        myAudioPlayer.pause()
+        println("onClickCreditButton:")
+        // 遷移するViewを定義する.
+        let myCreditViewController: UIViewController = Credit()
+        self.presentViewController(myCreditViewController, animated: false, completion: nil)
+        
+    }
+    
+    //音楽再生が成功した時に呼ばれるメソッド
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
+        println("Music Finish")
+        myAudioPlayer.play()
+    }
+    
+    //デコード中にエラーが起きた時に呼ばれるメソッド.
+    func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer!, error: NSError!) {
+        println("Error")
+    }
 }

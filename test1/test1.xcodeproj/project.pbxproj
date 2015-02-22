@@ -106,6 +106,18 @@
 		5C5451DA1A98F4E90002147A /* syoukouyoru.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C5451D01A98F4E90002147A /* syoukouyoru.jpg */; };
 		5C5451DC1A98FC390002147A /* Kyousitu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C5451DB1A98FC390002147A /* Kyousitu.jpg */; };
 		5C5451DE1A98FFF40002147A /* character2-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C5451DD1A98FFF40002147A /* character2-2.png */; };
+		5C60CF3A1A99E43E002EF0E9 /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C60CF391A99E43E002EF0E9 /* Credit.swift */; };
+		5C60CF4B1A99EA35002EF0E9 /* cp04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF3D1A99EA35002EF0E9 /* cp04.mp3 */; };
+		5C60CF4C1A99EA35002EF0E9 /* tw006.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF3E1A99EA35002EF0E9 /* tw006.mp3 */; };
+		5C60CF4D1A99EA35002EF0E9 /* 2693.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF401A99EA35002EF0E9 /* 2693.mp3 */; };
+		5C60CF4E1A99EA35002EF0E9 /* Super G@mer Boy offvocal.ver.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF421A99EA35002EF0E9 /* Super G@mer Boy offvocal.ver.mp3 */; };
+		5C60CF4F1A99EA35002EF0E9 /* ガーシュイン ラプソディー・イン・ブルー Pジョージ・ガーシュウィン(自作自演) 1927年録音.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF431A99EA35002EF0E9 /* ガーシュイン ラプソディー・イン・ブルー Pジョージ・ガーシュウィン(自作自演) 1927年録音.mp3 */; };
+		5C60CF501A99EA35002EF0E9 /* モーツァルト 大いなる魂と高貴な心は(アリア) K.578 Sエリーザベト・シュヴァルツコップ 指揮ジョージ・セル アロンドン交響楽団.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF441A99EA35002EF0E9 /* モーツァルト 大いなる魂と高貴な心は(アリア) K.578 Sエリーザベト・シュヴァルツコップ 指揮ジョージ・セル アロンドン交響楽団.mp3 */; };
+		5C60CF511A99EA35002EF0E9 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF461A99EA35002EF0E9 /* 1.mp3 */; };
+		5C60CF521A99EA35002EF0E9 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF471A99EA35002EF0E9 /* 2.mp3 */; };
+		5C60CF531A99EA35002EF0E9 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF481A99EA35002EF0E9 /* 3.mp3 */; };
+		5C60CF541A99EA35002EF0E9 /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF491A99EA35002EF0E9 /* 4.mp3 */; };
+		5C60CF551A99EA35002EF0E9 /* 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF4A1A99EA35002EF0E9 /* 5.mp3 */; };
 		5C71AD451A3EA6D800A4C396 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C71AD441A3EA6D800A4C396 /* SecondViewController.swift */; };
 		5CA46B921A3E95EB006A21E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA46B911A3E95EB006A21E6 /* AppDelegate.swift */; };
 		5CA46B941A3E95EB006A21E6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA46B931A3E95EB006A21E6 /* FirstViewController.swift */; };
@@ -225,6 +237,18 @@
 		5C5451D01A98F4E90002147A /* syoukouyoru.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = syoukouyoru.jpg; sourceTree = "<group>"; };
 		5C5451DB1A98FC390002147A /* Kyousitu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kyousitu.jpg; sourceTree = "<group>"; };
 		5C5451DD1A98FFF40002147A /* character2-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "character2-2.png"; sourceTree = "<group>"; };
+		5C60CF391A99E43E002EF0E9 /* Credit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
+		5C60CF3D1A99EA35002EF0E9 /* cp04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cp04.mp3; sourceTree = "<group>"; };
+		5C60CF3E1A99EA35002EF0E9 /* tw006.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tw006.mp3; sourceTree = "<group>"; };
+		5C60CF401A99EA35002EF0E9 /* 2693.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2693.mp3; sourceTree = "<group>"; };
+		5C60CF421A99EA35002EF0E9 /* Super G@mer Boy offvocal.ver.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Super G@mer Boy offvocal.ver.mp3"; sourceTree = "<group>"; };
+		5C60CF431A99EA35002EF0E9 /* ガーシュイン ラプソディー・イン・ブルー Pジョージ・ガーシュウィン(自作自演) 1927年録音.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ガーシュイン ラプソディー・イン・ブルー Pジョージ・ガーシュウィン(自作自演) 1927年録音.mp3"; sourceTree = "<group>"; };
+		5C60CF441A99EA35002EF0E9 /* モーツァルト 大いなる魂と高貴な心は(アリア) K.578 Sエリーザベト・シュヴァルツコップ 指揮ジョージ・セル アロンドン交響楽団.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "モーツァルト 大いなる魂と高貴な心は(アリア) K.578 Sエリーザベト・シュヴァルツコップ 指揮ジョージ・セル アロンドン交響楽団.mp3"; sourceTree = "<group>"; };
+		5C60CF461A99EA35002EF0E9 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		5C60CF471A99EA35002EF0E9 /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
+		5C60CF481A99EA35002EF0E9 /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
+		5C60CF491A99EA35002EF0E9 /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
+		5C60CF4A1A99EA35002EF0E9 /* 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5.mp3; sourceTree = "<group>"; };
 		5C71AD441A3EA6D800A4C396 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5CA46B8C1A3E95EB006A21E6 /* test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA46B901A3E95EB006A21E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -259,6 +283,7 @@
 		5C5451141A98D2FD0002147A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5C60CF3B1A99EA35002EF0E9 /* freebgm */,
 				5C5451151A98D2FD0002147A /* Documents */,
 				5C5451401A98D2FD0002147A /* images */,
 			);
@@ -450,6 +475,56 @@
 			path = "主人公2/bg";
 			sourceTree = "<group>";
 		};
+		5C60CF3B1A99EA35002EF0E9 /* freebgm */ = {
+			isa = PBXGroup;
+			children = (
+				5C60CF3C1A99EA35002EF0E9 /* musmus */,
+				5C60CF3F1A99EA35002EF0E9 /* sound audition */,
+				5C60CF411A99EA35002EF0E9 /* こんとーどっふぇ */,
+				5C60CF431A99EA35002EF0E9 /* ガーシュイン ラプソディー・イン・ブルー Pジョージ・ガーシュウィン(自作自演) 1927年録音.mp3 */,
+				5C60CF441A99EA35002EF0E9 /* モーツァルト 大いなる魂と高貴な心は(アリア) K.578 Sエリーザベト・シュヴァルツコップ 指揮ジョージ・セル アロンドン交響楽団.mp3 */,
+				5C60CF451A99EA35002EF0E9 /* ヤナーチェク シンフォニエッタ 指揮ラファエル・クーベリック ウィーン・フィルハーモニー管弦楽団 1955年3月録音 */,
+			);
+			path = freebgm;
+			sourceTree = "<group>";
+		};
+		5C60CF3C1A99EA35002EF0E9 /* musmus */ = {
+			isa = PBXGroup;
+			children = (
+				5C60CF3D1A99EA35002EF0E9 /* cp04.mp3 */,
+				5C60CF3E1A99EA35002EF0E9 /* tw006.mp3 */,
+			);
+			path = musmus;
+			sourceTree = "<group>";
+		};
+		5C60CF3F1A99EA35002EF0E9 /* sound audition */ = {
+			isa = PBXGroup;
+			children = (
+				5C60CF401A99EA35002EF0E9 /* 2693.mp3 */,
+			);
+			path = "sound audition";
+			sourceTree = "<group>";
+		};
+		5C60CF411A99EA35002EF0E9 /* こんとーどっふぇ */ = {
+			isa = PBXGroup;
+			children = (
+				5C60CF421A99EA35002EF0E9 /* Super G@mer Boy offvocal.ver.mp3 */,
+			);
+			path = "こんとーどっふぇ";
+			sourceTree = "<group>";
+		};
+		5C60CF451A99EA35002EF0E9 /* ヤナーチェク シンフォニエッタ 指揮ラファエル・クーベリック ウィーン・フィルハーモニー管弦楽団 1955年3月録音 */ = {
+			isa = PBXGroup;
+			children = (
+				5C60CF461A99EA35002EF0E9 /* 1.mp3 */,
+				5C60CF471A99EA35002EF0E9 /* 2.mp3 */,
+				5C60CF481A99EA35002EF0E9 /* 3.mp3 */,
+				5C60CF491A99EA35002EF0E9 /* 4.mp3 */,
+				5C60CF4A1A99EA35002EF0E9 /* 5.mp3 */,
+			);
+			path = "ヤナーチェク シンフォニエッタ 指揮ラファエル・クーベリック ウィーン・フィルハーモニー管弦楽団 1955年3月録音";
+			sourceTree = "<group>";
+		};
 		5CA46B831A3E95EB006A21E6 = {
 			isa = PBXGroup;
 			children = (
@@ -474,6 +549,7 @@
 				5C5451141A98D2FD0002147A /* Resources */,
 				5CA46B911A3E95EB006A21E6 /* AppDelegate.swift */,
 				5CA46B931A3E95EB006A21E6 /* FirstViewController.swift */,
+				5C60CF391A99E43E002EF0E9 /* Credit.swift */,
 				5C71AD441A3EA6D800A4C396 /* SecondViewController.swift */,
 				5C2DED4A1A95F4140067DED6 /* ACTViewController1.swift */,
 				5C5451BA1A98DD260002147A /* Status1.swift */,
@@ -600,6 +676,7 @@
 				5C5451A91A98D2FE0002147A /* 11.png in Resources */,
 				5C5451731A98D2FE0002147A /* 2year3rdEnd.txt in Resources */,
 				5C5451901A98D2FE0002147A /* Valentine.txt in Resources */,
+				5C60CF4C1A99EA35002EF0E9 /* tw006.mp3 in Resources */,
 				5C5451D81A98F4E90002147A /* schoolroad.jpg in Resources */,
 				5C54517E1A98D2FE0002147A /* ikemen.txt in Resources */,
 				5C5451A41A98D2FE0002147A /* famas2.png in Resources */,
@@ -608,6 +685,7 @@
 				5C5451961A98D2FE0002147A /* load-y.png in Resources */,
 				5C5451881A98D2FE0002147A /* tera.txt in Resources */,
 				5C54518D1A98D2FE0002147A /* CulturalFest.txt in Resources */,
+				5C60CF531A99EA35002EF0E9 /* 3.mp3 in Resources */,
 				5C5451B41A98D2FE0002147A /* 6.png in Resources */,
 				5C5451701A98D2FE0002147A /* 2year2ndCenter.txt in Resources */,
 				5C5451811A98D2FE0002147A /* senior_meating.txt in Resources */,
@@ -620,6 +698,7 @@
 				5C5451D61A98F4E90002147A /* rika.jpg in Resources */,
 				5C54518A1A98D2FE0002147A /* 1stVisitShrine.txt in Resources */,
 				5C5451791A98D2FE0002147A /* 3year3rdEnd.txt in Resources */,
+				5C60CF511A99EA35002EF0E9 /* 1.mp3 in Resources */,
 				5C54516C1A98D2FE0002147A /* famas.1.txt in Resources */,
 				5C5451841A98D2FE0002147A /* koutei.txt in Resources */,
 				5C54519C1A98D2FE0002147A /* start-p.png in Resources */,
@@ -632,7 +711,9 @@
 				5C5451A81A98D2FE0002147A /* 10.png in Resources */,
 				5C5451821A98D2FE0002147A /* ekimae.txt in Resources */,
 				5C5451A71A98D2FE0002147A /* 1.png in Resources */,
+				5C60CF501A99EA35002EF0E9 /* モーツァルト 大いなる魂と高貴な心は(アリア) K.578 Sエリーザベト・シュヴァルツコップ 指揮ジョージ・セル アロンドン交響楽団.mp3 in Resources */,
 				5C5451B71A98D2FE0002147A /* 9.png in Resources */,
+				5C60CF551A99EA35002EF0E9 /* 5.mp3 in Resources */,
 				5C5451AA1A98D2FE0002147A /* 12.png in Resources */,
 				5C5451DA1A98F4E90002147A /* syoukouyoru.jpg in Resources */,
 				5C5451BD1A98E1520002147A /* rikeko.png in Resources */,
@@ -642,6 +723,7 @@
 				5C5451AF1A98D2FE0002147A /* 17.png in Resources */,
 				5C5451B11A98D2FE0002147A /* 3.png in Resources */,
 				5C5451B31A98D2FE0002147A /* 5.png in Resources */,
+				5C60CF4B1A99EA35002EF0E9 /* cp04.mp3 in Resources */,
 				5C5451D11A98F4E90002147A /* house.jpg in Resources */,
 				5C5451851A98D2FE0002147A /* kyousitu.txt in Resources */,
 				5C5451991A98D2FE0002147A /* newgame-y.png in Resources */,
@@ -652,6 +734,7 @@
 				5C5451A31A98D2FE0002147A /* famas.png in Resources */,
 				5C5451741A98D2FE0002147A /* 3year1stCenter.txt in Resources */,
 				5C5451B01A98D2FE0002147A /* 2.png in Resources */,
+				5C60CF541A99EA35002EF0E9 /* 4.mp3 in Resources */,
 				5CA46B971A3E95EB006A21E6 /* Main.storyboard in Resources */,
 				5C54518E1A98D2FE0002147A /* ExamOfCenter.txt in Resources */,
 				5C5451B61A98D2FE0002147A /* 8.png in Resources */,
@@ -662,6 +745,7 @@
 				5C5451BF1A98E1590002147A /* rikeko2.png in Resources */,
 				5C5451AB1A98D2FE0002147A /* 13.png in Resources */,
 				5C5451941A98D2FE0002147A /* exit-p.png in Resources */,
+				5C60CF4E1A99EA35002EF0E9 /* Super G@mer Boy offvocal.ver.mp3 in Resources */,
 				5C5451A21A98D2FE0002147A /* character1.png in Resources */,
 				5C5451A11A98D2FE0002147A /* べんきょう.png in Resources */,
 				5C54517F1A98D2FE0002147A /* maeken.txt in Resources */,
@@ -683,12 +767,15 @@
 				5C5451931A98D2FE0002147A /* cgmode-y.png in Resources */,
 				5C5451D91A98F4E90002147A /* shoukouguti.jpg in Resources */,
 				5C5451B21A98D2FE0002147A /* 4.png in Resources */,
+				5C60CF521A99EA35002EF0E9 /* 2.mp3 in Resources */,
 				5C5451771A98D2FE0002147A /* 3year2ndEnd.txt in Resources */,
 				5C5451751A98D2FE0002147A /* 3year1stEnd.txt in Resources */,
+				5C60CF4D1A99EA35002EF0E9 /* 2693.mp3 in Resources */,
 				5C54516D1A98D2FE0002147A /* ikemen.txt in Resources */,
 				5C5451871A98D2FE0002147A /* rikasitu.txt in Resources */,
 				5C5451781A98D2FE0002147A /* 3year3rdCenter.txt in Resources */,
 				5C5451711A98D2FE0002147A /* 2year2ndEnd.txt in Resources */,
+				5C60CF4F1A99EA35002EF0E9 /* ガーシュイン ラプソディー・イン・ブルー Pジョージ・ガーシュウィン(自作自演) 1927年録音.mp3 in Resources */,
 				5C5451891A98D2FE0002147A /* senior_meating.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -717,6 +804,7 @@
 				5CA46B941A3E95EB006A21E6 /* FirstViewController.swift in Sources */,
 				5C5451B91A98DBD80002147A /* ACTViewController2.swift in Sources */,
 				5CA46B921A3E95EB006A21E6 /* AppDelegate.swift in Sources */,
+				5C60CF3A1A99E43E002EF0E9 /* Credit.swift in Sources */,
 				5C5451111A98CC0F0002147A /* RandomEventMorning1.swift in Sources */,
 				5C5451C51A98ED150002147A /* sleep1.swift in Sources */,
 			);

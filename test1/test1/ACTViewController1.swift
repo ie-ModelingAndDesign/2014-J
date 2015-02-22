@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
-class ACTViewController1: UIViewController {
+class ACTViewController1: UIViewController,AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         

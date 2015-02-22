@@ -8,11 +8,23 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
-class FINISH: UIViewController {
+class FINISH: UIViewController,AVAudioPlayerDelegate {
+    var myAudioPlayer : AVAudioPlayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //再生する音源のURLを生成.
+        let soundFilePath : NSString = NSBundle.mainBundle().pathForResource("tw006", ofType: "mp3")!
+        let fileURL : NSURL = NSURL(fileURLWithPath: soundFilePath)!
+        //AVAudioPlayerのインスタンス化.
+        myAudioPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: nil)
+        //AVAudioPlayerのデリゲートをセット.
+        myAudioPlayer.delegate = self
+        myAudioPlayer.play()
+
         self.view.backgroundColor = UIColor.whiteColor()
 
         // 主人公立ち絵
@@ -49,6 +61,7 @@ class FINISH: UIViewController {
         super.didReceiveMemoryWarning()
     }
     func onClickButton1(sender: UIButton){
+        myAudioPlayer.pause()
         println("onClickButton1")
         let Status1ViewController: UIViewController = FirstViewController()
         self.presentViewController(Status1ViewController, animated: false, completion: nil)
