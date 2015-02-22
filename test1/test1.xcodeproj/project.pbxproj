@@ -118,6 +118,17 @@
 		5C60CF531A99EA35002EF0E9 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF481A99EA35002EF0E9 /* 3.mp3 */; };
 		5C60CF541A99EA35002EF0E9 /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF491A99EA35002EF0E9 /* 4.mp3 */; };
 		5C60CF551A99EA35002EF0E9 /* 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF4A1A99EA35002EF0E9 /* 5.mp3 */; };
+		5C60CF581A99F966002EF0E9 /* chicken-cry1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF571A99F966002EF0E9 /* chicken-cry1.mp3 */; };
+		5C60CF5A1A99FD4C002EF0E9 /* senpai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF591A99FD4C002EF0E9 /* senpai.mp3 */; };
+		5C60CF5D1A9A01C1002EF0E9 /* q1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF5B1A9A01C1002EF0E9 /* q1.png */; };
+		5C60CF5E1A9A01C1002EF0E9 /* q2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C60CF5C1A9A01C1002EF0E9 /* q2.png */; };
+		5C60CF661A9A01D9002EF0E9 /* Fuseikai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C60CF5F1A9A01D9002EF0E9 /* Fuseikai.swift */; };
+		5C60CF671A9A01D9002EF0E9 /* MathIA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C60CF601A9A01D9002EF0E9 /* MathIA.swift */; };
+		5C60CF681A9A01D9002EF0E9 /* MathIIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C60CF611A9A01D9002EF0E9 /* MathIIB.swift */; };
+		5C60CF691A9A01D9002EF0E9 /* PhysicsI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C60CF621A9A01D9002EF0E9 /* PhysicsI.swift */; };
+		5C60CF6A1A9A01D9002EF0E9 /* PhysicsII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C60CF631A9A01D9002EF0E9 /* PhysicsII.swift */; };
+		5C60CF6B1A9A01D9002EF0E9 /* Seikai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C60CF641A9A01D9002EF0E9 /* Seikai.swift */; };
+		5C60CF6C1A9A01D9002EF0E9 /* SelectQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C60CF651A9A01D9002EF0E9 /* SelectQuestion.swift */; };
 		5C71AD451A3EA6D800A4C396 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C71AD441A3EA6D800A4C396 /* SecondViewController.swift */; };
 		5CA46B921A3E95EB006A21E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA46B911A3E95EB006A21E6 /* AppDelegate.swift */; };
 		5CA46B941A3E95EB006A21E6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA46B931A3E95EB006A21E6 /* FirstViewController.swift */; };
@@ -249,6 +260,17 @@
 		5C60CF481A99EA35002EF0E9 /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
 		5C60CF491A99EA35002EF0E9 /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
 		5C60CF4A1A99EA35002EF0E9 /* 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5.mp3; sourceTree = "<group>"; };
+		5C60CF571A99F966002EF0E9 /* chicken-cry1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "chicken-cry1.mp3"; sourceTree = "<group>"; };
+		5C60CF591A99FD4C002EF0E9 /* senpai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = senpai.mp3; sourceTree = "<group>"; };
+		5C60CF5B1A9A01C1002EF0E9 /* q1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = q1.png; sourceTree = "<group>"; };
+		5C60CF5C1A9A01C1002EF0E9 /* q2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = q2.png; sourceTree = "<group>"; };
+		5C60CF5F1A9A01D9002EF0E9 /* Fuseikai.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fuseikai.swift; sourceTree = "<group>"; };
+		5C60CF601A9A01D9002EF0E9 /* MathIA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathIA.swift; sourceTree = "<group>"; };
+		5C60CF611A9A01D9002EF0E9 /* MathIIB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathIIB.swift; sourceTree = "<group>"; };
+		5C60CF621A9A01D9002EF0E9 /* PhysicsI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsI.swift; sourceTree = "<group>"; };
+		5C60CF631A9A01D9002EF0E9 /* PhysicsII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsII.swift; sourceTree = "<group>"; };
+		5C60CF641A9A01D9002EF0E9 /* Seikai.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seikai.swift; sourceTree = "<group>"; };
+		5C60CF651A9A01D9002EF0E9 /* SelectQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectQuestion.swift; sourceTree = "<group>"; };
 		5C71AD441A3EA6D800A4C396 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5CA46B8C1A3E95EB006A21E6 /* test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA46B901A3E95EB006A21E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -377,6 +399,8 @@
 		5C5451401A98D2FD0002147A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5C60CF5B1A9A01C1002EF0E9 /* q1.png */,
+				5C60CF5C1A9A01C1002EF0E9 /* q2.png */,
 				5C5451DD1A98FFF40002147A /* character2-2.png */,
 				5C5451BC1A98E1520002147A /* rikeko.png */,
 				5C5451BE1A98E1590002147A /* rikeko2.png */,
@@ -478,6 +502,7 @@
 		5C60CF3B1A99EA35002EF0E9 /* freebgm */ = {
 			isa = PBXGroup;
 			children = (
+				5C60CF561A99F966002EF0E9 /* se */,
 				5C60CF3C1A99EA35002EF0E9 /* musmus */,
 				5C60CF3F1A99EA35002EF0E9 /* sound audition */,
 				5C60CF411A99EA35002EF0E9 /* こんとーどっふぇ */,
@@ -500,6 +525,7 @@
 		5C60CF3F1A99EA35002EF0E9 /* sound audition */ = {
 			isa = PBXGroup;
 			children = (
+				5C60CF591A99FD4C002EF0E9 /* senpai.mp3 */,
 				5C60CF401A99EA35002EF0E9 /* 2693.mp3 */,
 			);
 			path = "sound audition";
@@ -523,6 +549,14 @@
 				5C60CF4A1A99EA35002EF0E9 /* 5.mp3 */,
 			);
 			path = "ヤナーチェク シンフォニエッタ 指揮ラファエル・クーベリック ウィーン・フィルハーモニー管弦楽団 1955年3月録音";
+			sourceTree = "<group>";
+		};
+		5C60CF561A99F966002EF0E9 /* se */ = {
+			isa = PBXGroup;
+			children = (
+				5C60CF571A99F966002EF0E9 /* chicken-cry1.mp3 */,
+			);
+			path = se;
 			sourceTree = "<group>";
 		};
 		5CA46B831A3E95EB006A21E6 = {
@@ -560,6 +594,13 @@
 				5C5451C01A98E3280002147A /* Status2.swift */,
 				5C5451121A98CC450002147A /* RandomEventNight2.swift */,
 				5C5451C21A98E5EF0002147A /* FINISH.swift */,
+				5C60CF5F1A9A01D9002EF0E9 /* Fuseikai.swift */,
+				5C60CF601A9A01D9002EF0E9 /* MathIA.swift */,
+				5C60CF611A9A01D9002EF0E9 /* MathIIB.swift */,
+				5C60CF621A9A01D9002EF0E9 /* PhysicsI.swift */,
+				5C60CF631A9A01D9002EF0E9 /* PhysicsII.swift */,
+				5C60CF641A9A01D9002EF0E9 /* Seikai.swift */,
+				5C60CF651A9A01D9002EF0E9 /* SelectQuestion.swift */,
 				5CA46B951A3E95EB006A21E6 /* Main.storyboard */,
 				5CA46B981A3E95EB006A21E6 /* Images.xcassets */,
 				5CA46B9A1A3E95EB006A21E6 /* LaunchScreen.xib */,
@@ -675,6 +716,7 @@
 			files = (
 				5C5451A91A98D2FE0002147A /* 11.png in Resources */,
 				5C5451731A98D2FE0002147A /* 2year3rdEnd.txt in Resources */,
+				5C60CF581A99F966002EF0E9 /* chicken-cry1.mp3 in Resources */,
 				5C5451901A98D2FE0002147A /* Valentine.txt in Resources */,
 				5C60CF4C1A99EA35002EF0E9 /* tw006.mp3 in Resources */,
 				5C5451D81A98F4E90002147A /* schoolroad.jpg in Resources */,
@@ -698,6 +740,7 @@
 				5C5451D61A98F4E90002147A /* rika.jpg in Resources */,
 				5C54518A1A98D2FE0002147A /* 1stVisitShrine.txt in Resources */,
 				5C5451791A98D2FE0002147A /* 3year3rdEnd.txt in Resources */,
+				5C60CF5A1A99FD4C002EF0E9 /* senpai.mp3 in Resources */,
 				5C60CF511A99EA35002EF0E9 /* 1.mp3 in Resources */,
 				5C54516C1A98D2FE0002147A /* famas.1.txt in Resources */,
 				5C5451841A98D2FE0002147A /* koutei.txt in Resources */,
@@ -723,6 +766,7 @@
 				5C5451AF1A98D2FE0002147A /* 17.png in Resources */,
 				5C5451B11A98D2FE0002147A /* 3.png in Resources */,
 				5C5451B31A98D2FE0002147A /* 5.png in Resources */,
+				5C60CF5E1A9A01C1002EF0E9 /* q2.png in Resources */,
 				5C60CF4B1A99EA35002EF0E9 /* cp04.mp3 in Resources */,
 				5C5451D11A98F4E90002147A /* house.jpg in Resources */,
 				5C5451851A98D2FE0002147A /* kyousitu.txt in Resources */,
@@ -746,6 +790,7 @@
 				5C5451AB1A98D2FE0002147A /* 13.png in Resources */,
 				5C5451941A98D2FE0002147A /* exit-p.png in Resources */,
 				5C60CF4E1A99EA35002EF0E9 /* Super G@mer Boy offvocal.ver.mp3 in Resources */,
+				5C60CF5D1A9A01C1002EF0E9 /* q1.png in Resources */,
 				5C5451A21A98D2FE0002147A /* character1.png in Resources */,
 				5C5451A11A98D2FE0002147A /* べんきょう.png in Resources */,
 				5C54517F1A98D2FE0002147A /* maeken.txt in Resources */,
@@ -795,11 +840,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C5451C31A98E5EF0002147A /* FINISH.swift in Sources */,
+				5C60CF691A9A01D9002EF0E9 /* PhysicsI.swift in Sources */,
 				5C5451C11A98E3280002147A /* Status2.swift in Sources */,
+				5C60CF6C1A9A01D9002EF0E9 /* SelectQuestion.swift in Sources */,
 				5C2DEE451A9730A80067DED6 /* RandomEventNight1.swift in Sources */,
 				5C5451131A98CC450002147A /* RandomEventNight2.swift in Sources */,
+				5C60CF6A1A9A01D9002EF0E9 /* PhysicsII.swift in Sources */,
 				5C5451BB1A98DD260002147A /* Status1.swift in Sources */,
 				5C2DED4B1A95F4140067DED6 /* ACTViewController1.swift in Sources */,
+				5C60CF681A9A01D9002EF0E9 /* MathIIB.swift in Sources */,
+				5C60CF661A9A01D9002EF0E9 /* Fuseikai.swift in Sources */,
 				5C71AD451A3EA6D800A4C396 /* SecondViewController.swift in Sources */,
 				5CA46B941A3E95EB006A21E6 /* FirstViewController.swift in Sources */,
 				5C5451B91A98DBD80002147A /* ACTViewController2.swift in Sources */,
@@ -807,6 +857,8 @@
 				5C60CF3A1A99E43E002EF0E9 /* Credit.swift in Sources */,
 				5C5451111A98CC0F0002147A /* RandomEventMorning1.swift in Sources */,
 				5C5451C51A98ED150002147A /* sleep1.swift in Sources */,
+				5C60CF671A9A01D9002EF0E9 /* MathIA.swift in Sources */,
+				5C60CF6B1A9A01D9002EF0E9 /* Seikai.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

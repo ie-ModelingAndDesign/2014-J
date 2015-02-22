@@ -1,11 +1,20 @@
 import UIKit
+import AVFoundation
 
-
-class sleep1: UIViewController {
+class sleep1: UIViewController,AVAudioPlayerDelegate {
+    var myAudioPlayer : AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //再生する音源のURLを生成.
+        let soundFilePath : NSString = NSBundle.mainBundle().pathForResource("chicken-cry1", ofType: "mp3")!
+        let fileURL : NSURL = NSURL(fileURLWithPath: soundFilePath)!
+        //AVAudioPlayerのインスタンス化.
+        myAudioPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: nil)
+        //AVAudioPlayerのデリゲートをセット.
+        myAudioPlayer.delegate = self
+        myAudioPlayer.play()
         let myLabel: UILabel = UILabel(frame: CGRectMake(0,0,200,50))
         myLabel.backgroundColor = UIColor(red: 0.0, green: 1.0, blue: 0.0, alpha: 0.00)
         myLabel.layer.masksToBounds = true

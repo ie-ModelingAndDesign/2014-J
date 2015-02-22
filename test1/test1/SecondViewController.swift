@@ -211,13 +211,10 @@ class SecondViewController: UIViewController,AVAudioPlayerDelegate {
     //音楽再生が成功した時に呼ばれるメソッド
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
         println("Music Finish")
-        myAudioPlayer.play()
+            myAudioPlayer.play()
     }
-    
     //デコード中にエラーが起きた時に呼ばれるメソッド.
     func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer!, error: NSError!) {
         println("Error")
     }
-    
-    
 }

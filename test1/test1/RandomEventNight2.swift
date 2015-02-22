@@ -1,7 +1,9 @@
 import UIKit
 import Foundation
+import AVFoundation
 
-class RandomEventNight2: UIViewController {
+class RandomEventNight2: UIViewController,AVAudioPlayerDelegate {
+    var myAudioPlayer : AVAudioPlayer!
     
     let character0View: UIImageView = UIImageView(frame: CGRectMake(0,0,300,300))
     var character0 = UIImage(named: "1.png")
@@ -27,7 +29,18 @@ class RandomEventNight2: UIViewController {
     
     override func viewDidLoad() {
         
+        
         super.viewDidLoad()
+        
+        //再生する音源のURLを生成.
+        let soundFilePath : NSString = NSBundle.mainBundle().pathForResource("senpai", ofType: "mp3")!
+        let fileURL : NSURL = NSURL(fileURLWithPath: soundFilePath)!
+        //AVAudioPlayerのインスタンス化.
+        myAudioPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: nil)
+        //AVAudioPlayerのデリゲートをセット.
+        myAudioPlayer.delegate = self
+        myAudioPlayer.play()
+        
         character0View.image = character0
         character0View.layer.position = CGPoint(x: 200, y: 125.0)
         character0View.removeFromSuperview()
@@ -111,6 +124,7 @@ class RandomEventNight2: UIViewController {
     func onClickTextButton(sender: UIButton){
         println("onClickTextButton")
         if i == moji.count-1 {
+            myAudioPlayer.pause()
             let myACTViewController: UIViewController = FINISH()
             self.presentViewController(myACTViewController, animated: false, completion: nil)
         }else {
@@ -141,6 +155,16 @@ class RandomEventNight2: UIViewController {
         }
     }
     
+    //音楽再生が成功した時に呼ばれるメソッド
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
+        println("Music Finish")
+        myAudioPlayer.play()
+    }
     
+    //デコード中にエラーが起きた時に呼ばれるメソッド.
+    func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer!, error: NSError!) {
+        println("Error")
+    }
+
     
 }

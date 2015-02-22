@@ -113,7 +113,7 @@ class ACTViewController2: UIViewController {
     
     func onClickButton1(sender: UIButton){
         println("onClickButton1")
-        let mySecondViewController: UIViewController = RandomEventNight2()
+        let mySecondViewController: UIViewController = SelectQuestion2()
         self.presentViewController(mySecondViewController, animated: false, completion: nil)
         
     }

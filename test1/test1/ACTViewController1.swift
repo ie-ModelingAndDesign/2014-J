@@ -110,7 +110,7 @@ class ACTViewController1: UIViewController,AVAudioPlayerDelegate {
     
     func onClickButton1(sender: UIButton){
         println("onClickButton1")
-        let mySecondViewController: UIViewController = RandomEventNight1()
+        let mySecondViewController: UIViewController = SelectQuestion1()
         self.presentViewController(mySecondViewController, animated: false, completion: nil)
         
     }
