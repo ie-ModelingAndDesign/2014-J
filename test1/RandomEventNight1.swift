@@ -38,7 +38,7 @@ class RandomEventNight1: UIViewController,AVAudioPlayerDelegate {
         super.viewDidLoad()
         
         //再生する音源のURLを生成.
-        let soundFilePath : NSString = NSBundle.mainBundle().pathForResource("モーツァルト 大いなる魂と高貴な心は(アリア) K.578 Sエリーザベト・シュヴァルツコップ 指揮ジョージ・セル アロンドン交響楽団", ofType: "mp3")!
+        let soundFilePath : NSString = NSBundle.mainBundle().pathForResource("BWV1050-1", ofType: "mp3")!
         let fileURL : NSURL = NSURL(fileURLWithPath: soundFilePath)!
         //AVAudioPlayerのインスタンス化.
         myAudioPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: nil)

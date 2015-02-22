@@ -130,6 +130,7 @@
 		5C60CF6B1A9A01D9002EF0E9 /* Seikai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C60CF641A9A01D9002EF0E9 /* Seikai.swift */; };
 		5C60CF6C1A9A01D9002EF0E9 /* SelectQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C60CF651A9A01D9002EF0E9 /* SelectQuestion.swift */; };
 		5C71AD451A3EA6D800A4C396 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C71AD441A3EA6D800A4C396 /* SecondViewController.swift */; };
+		5C862D971A9A27CD0031A2EA /* BWV1050-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C862D961A9A27CD0031A2EA /* BWV1050-1.mp3 */; };
 		5CA46B921A3E95EB006A21E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA46B911A3E95EB006A21E6 /* AppDelegate.swift */; };
 		5CA46B941A3E95EB006A21E6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA46B931A3E95EB006A21E6 /* FirstViewController.swift */; };
 		5CA46B971A3E95EB006A21E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA46B951A3E95EB006A21E6 /* Main.storyboard */; };
@@ -272,6 +273,7 @@
 		5C60CF641A9A01D9002EF0E9 /* Seikai.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seikai.swift; sourceTree = "<group>"; };
 		5C60CF651A9A01D9002EF0E9 /* SelectQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectQuestion.swift; sourceTree = "<group>"; };
 		5C71AD441A3EA6D800A4C396 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5C862D961A9A27CD0031A2EA /* BWV1050-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BWV1050-1.mp3"; sourceTree = "<group>"; };
 		5CA46B8C1A3E95EB006A21E6 /* test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA46B901A3E95EB006A21E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CA46B911A3E95EB006A21E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -502,6 +504,7 @@
 		5C60CF3B1A99EA35002EF0E9 /* freebgm */ = {
 			isa = PBXGroup;
 			children = (
+				5C862D961A9A27CD0031A2EA /* BWV1050-1.mp3 */,
 				5C60CF561A99F966002EF0E9 /* se */,
 				5C60CF3C1A99EA35002EF0E9 /* musmus */,
 				5C60CF3F1A99EA35002EF0E9 /* sound audition */,
@@ -797,6 +800,7 @@
 				5CA46B9C1A3E95EB006A21E6 /* LaunchScreen.xib in Resources */,
 				5C5451AC1A98D2FE0002147A /* 14.png in Resources */,
 				5C5451A51A98D2FE0002147A /* タイトル仮.png in Resources */,
+				5C862D971A9A27CD0031A2EA /* BWV1050-1.mp3 in Resources */,
 				5C54518C1A98D2FE0002147A /* Christmas.txt in Resources */,
 				5C54516F1A98D2FE0002147A /* 2year1stEnd.txt in Resources */,
 				5C54519B1A98D2FE0002147A /* option-y.png in Resources */,

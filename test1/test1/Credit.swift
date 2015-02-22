@@ -22,7 +22,7 @@ class Credit: UIViewController {
         myLabel.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.0)
         myLabel.layer.masksToBounds = true
         myLabel.layer.cornerRadius = 20.0
-        myLabel.text = "【BGM・SE】\n こんとどふぇ様\n musmus様\n sound audition様\n 効果音ラボ様\n モーツァルト\n\n【背景】\n きまぐれアフター背景素材置場様\n 赤井ろにー様"
+        myLabel.text = "【BGM・SE】\n こんとどふぇ様\n musmus様\n sound audition様\n 効果音ラボ様\n Midi Classics様\n\n【背景】\n きまぐれアフター背景素材置場様\n 赤井ろにー様"
         myLabel.textColor = UIColor.blackColor()
         myLabel.textAlignment = NSTextAlignment.Center
         myLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: self.view.bounds.height/2)
