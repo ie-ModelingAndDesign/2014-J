@@ -273,7 +273,7 @@ class Fuseikai2: UIViewController {
         // コーナーの半径
         myLabel.layer.cornerRadius = 20.0
         // Labelに文字を代入
-        myLabel.text = "正解 : A"
+        myLabel.text = "正解 : C"
         // 文字の色を白にする
         myLabel.textColor = UIColor.whiteColor()
         // 文字の影の色をグレーにする
